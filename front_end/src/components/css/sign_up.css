@@ -1,0 +1,23 @@
+.container {
+    background-color: #CDE8E5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:30%;
+   
+    
+}
+.btn {
+    background-color: #4D869C;
+    border-color: #4D869C;
+}
+.btn:hover {
+    background-color: #CDE8E5;
+    border-color: #4D869C;
+    color: #4D869C;
+    text-decoration: solid;
+}
+.form-group{
+    margin-bottom: 20px;
+    min-width: fit-content;
+}
