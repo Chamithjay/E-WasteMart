@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #EEF7FF;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    
+}
+.navbar-brand{
+    font-size: 1.5em;
+    color: #000;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color:#EEF7FF;
+}
+.navbar-brand:hover{
+    background-color:#4D869C ;
+
+}

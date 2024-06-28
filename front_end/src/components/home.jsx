@@ -1,10 +1,14 @@
 import react from 'react';
+import Nav from './navbar.jsx';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function Home(){
     return(
         <div>
+            <Nav />
             <h1>Home</h1>
-            <link to='/sign_up'>Sign Up</link>
+            <a href='/sign_up'>Sign Up</a>
+            
         </div>
     )
 }
