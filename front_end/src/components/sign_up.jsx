@@ -1,11 +1,12 @@
 import react from 'react'
+import {useNavigate} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/sign_up.css'
 import Nav from "./navbar.jsx";
 import axios from 'axios';
 
 function SignUp(){
-
+      
     return(
         <div >
             <Nav />
@@ -18,19 +19,19 @@ function SignUp(){
                     <h2>Sign Up</h2>
                     <div className="form-group">
                         <label htmlFor="Name">Full Name:</label>
-                        <input type="text" className="form-control" id="Name" placeholder="Enter name" name="Name"/>
+                        <input type="text" className="form-control" id="Name" placeholder="Enter name" name="Name" required/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="Email">Email:</label>
-                        <input type="email" className="form-control" id="Email" placeholder="Enter email" name="Email"/>
+                        <input type="email" className="form-control" id="Email" placeholder="Enter email" name="Email"  required/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="Pwd">Password:</label>
-                        <input type="password" className="form-control" id="Pwd" placeholder="Enter password" name="Pwd"/>
+                        <input type="password" className="form-control" id="Pwd" placeholder="Enter password" name="Pwd" required/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="CPwd">Confirm Password:</label>
-                        <input type="password" className="form-control" id="CPwd" placeholder="Enter password" name="CPwd"/>
+                        <input type="password" className="form-control" id="CPwd" placeholder="Enter password" name="CPwd" required/>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
 
