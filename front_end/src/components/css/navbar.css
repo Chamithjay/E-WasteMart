@@ -1,5 +1,4 @@
 .navbar{
-    background-color: #EEF7FF;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -8,12 +7,34 @@
 }
 .navbar-brand{
     font-size: 1.5em;
-    color: #000;
+    color: #FFF;
     margin-left: 10px;
-    border-radius: 8px;
-    background-color:#EEF7FF;
+    
 }
 .navbar-brand:hover{
-    background-color:#4D869C ;
-
+    cursor: pointer;
+}
+#trash{
+    margin-left: 15px;
+}
+#trash:hover{
+    cursor: pointer;
+}
+.nav-btn{
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #000;
+    background-color: #4D869C;
+    border: 1px;
+    border-radius: 7px;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+.nav-btn:hover{
+    background-color: #CDE8E5;
+    color: #4D869C;
+    text-decoration: none;
+    border-color: #4D869C;
 }

@@ -6,8 +6,8 @@ function Home(){
     return(
         <div>
             <Nav />
-            <h1>Home</h1>
-            <a href='/sign_up'>Sign Up</a>
+            
+            
             
         </div>
     )
