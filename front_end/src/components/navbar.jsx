@@ -34,7 +34,7 @@ function Nav(){
             <button className="btn btn-outline-success" type="submit"><img src={search}/></button>
           </form>
           <div className="d-flex align-items-center">
-            <img src="path/to/your/image.jpg" alt="Profile" className="rounded-circle me-2" style={{ width: '30px', height: '30px' }} />
+            <a ></a>
             <a className="nav-btn"     href='/sign_up'>Sign Up</a>
           </div>
         </div>

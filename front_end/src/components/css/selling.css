@@ -1,0 +1,81 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+  margin-top: 50px;
+
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex: 1;
+  max-width: 550px;
+  margin: 0;
+  
+}
+
+.bento-item {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensure the border-radius applies to the images */
+  padding: 0px;
+}
+
+.bento-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bento-item img {
+  width: 100%;
+  border-radius: 15px;
+  
+}
+
+
+.bento-item.medium {
+  grid-column: span 2;
+}

@@ -1,24 +1,31 @@
 .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     height: 100vh;
     background:url('../Images/background.jpeg') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 20px;
+    
+  }
+  #text{
+    margin-right: 30px;
+    margin-top: 350px;
   }
   
   .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color:#4D869C;
   }
   
   .hero p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-bottom: 30px;
+    text-align: right;
   }
   
   .hero .btn {
@@ -59,5 +66,8 @@
   .bento-item h3 {
     font-size: 1.25rem;
     color: #333;
+  }
+  #buttons{
+    margin-right: 30px;
   }
   
