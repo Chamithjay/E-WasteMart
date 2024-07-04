@@ -30,7 +30,10 @@
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  -webkit-text-stroke: 0.1vw #fff;
+  color: rgba(0, 0, 0, 0);
 }
+
 
 .hero p {
   font-size: 1.25rem;
