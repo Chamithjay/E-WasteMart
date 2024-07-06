@@ -10,7 +10,7 @@ function SignUp(){
     return(
         <div >
             <Nav />
-            <div style={{ backgroundColor: '#7AB2B2', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ backgroundColor: '#212529', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               
             <div className="container">
           

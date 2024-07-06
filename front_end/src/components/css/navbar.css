@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;300;400&display=swap');
 .navbar{
     padding: 0;
     margin: 0;
     width: 100%;
     position: fixed;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
     
 }
 .navbar-brand{
@@ -33,7 +37,7 @@
     text-decoration: none;
 }
 .nav-btn:hover{
-    background-color: #CDE8E5;
+    background-color: #fff;
     color: #4D869C;
     text-decoration: none;
     border-color: #4D869C;

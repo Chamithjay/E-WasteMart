@@ -11,7 +11,9 @@ function Home(){
         <div>
             <Nav />         
             <Hero />
+            <Cards_home />
             <Footer />
+
             
             
             

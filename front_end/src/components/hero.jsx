@@ -10,10 +10,10 @@ import E4 from './Images/E4.jpg';
 
 function Hero(){
     return(
-      <div className="hero" style={{ backgroundImage: `url(${bg})` }}>
+      <div className="hero" style={{ backgroundColor:'#00230B'}}>
       <div className="hero-content">
           <div className="hero-text">
-              <h1 id='text' data-fill-text='recycling e-waste'>RECYCLING E-WASTE</h1>
+              <h1 id='text' data-fill-text='RECYCLING'>RECYCLING E-WASTE</h1>
               <p>DON'T WASTE YOUR TECH. RECYCLE, REBUILD, RESELL.</p>
           <div>
               <a href="#purchase" className="btn btn-light">Purchase</a>

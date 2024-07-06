@@ -1,53 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;300;400&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FDFFF7;
+}
+
+
+.heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.products{
+    margin:50px 10px;
+}
+
+.products h1{
+   text-align: center;
+   margin:50px 10px 20px 10px;
+   color:#5C2111;
+}
+
+
+/* Products */
+
 .card {
-    border: none;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .card-body {
+    box-sizing: border-box;
+    max-width: 22rem;
+    max-height: fit-content;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
     text-align: center;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    color: #666;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Adjusted */
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin: 0% 2%;
+    
+}
+
+.card:hover {
+    border: 1px solid #4D869C;
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card .image {
+    width: 100%;
+    /* Adjusted */
+    height: 40%;
+    margin-top: 0px;
     margin-bottom: 10px;
-  }
-  
-  .card-price {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #28a745;
-    margin-bottom: 15px;
-  }
-  
-  .card-btn {
-    background-color: #28a745;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card-btn:hover {
-    background-color: #218838;
-  }
-  
+}
+
+.card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 17px;
+    /* Adjusted */
+    border-top-right-radius: 17px;
+    /* Adjusted */
+}
+
+.card .caption {
+    padding: 0 15px;
+    /* Adjusted */
+    text-align: left;
+    line-height: 1.5em;
+    /* Adjusted */
+}
+
+.card .caption p {
+    color: #7a4b3d;
+    margin: 5px 0;
+    /* Adjusted */
+}
+
+.card .caption h3 {
+    color: #5C2111;
+    margin: 10px 0;
+    /* Adjusted */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px;
+
+}
+
+
+/* Add to cart button */
+.card button {
+    --color: #fff;
+    background-color: #4D869C;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.6em;
+    /* Adjusted */
+    margin: 10px;
+    /* Adjusted */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    color: var(--color);
+}
+
+.card button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    /* Adjusted */
+    width: 200px;
+    /* Adjusted */
+    border-radius: 50%;
+    transition: all .7s;
+    opacity: 0.3;
+    /* Adjusted */
+}
+
+.card button:hover {
+    color: #4D869C;
+    background-color: #fff;
+}
+
+.card button:before {
+    top: 100%;
+    left: 100%;
+}
+
+.card button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.card button:active:before {
+    background: #fff;
+    transition: background 0s;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

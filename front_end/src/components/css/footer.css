@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;300;400&display=swap');
 .footer {
     background-color: #212529;
     color: white;
     padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
   }
   
   .footer .container {

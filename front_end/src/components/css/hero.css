@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;300;400&display=swap');
 .hero {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,7 @@
   color: white;
   text-align: center;
   padding: 20px;
+
 }
 
 .hero-content {
@@ -18,6 +21,8 @@
   max-width: 1200px;
   text-align: left;
   margin-top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 
 }
 
@@ -26,12 +31,32 @@
   padding: 20px;
 }
 
-.hero h1 {
+#text {
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 20px;
-  -webkit-text-stroke: 0.1vw #fff;
+  -webkit-text-stroke: 0.05vw #fff;
   color: rgba(0, 0, 0, 0);
+  position: relative;
+ 
+  
+}
+
+#text::before {
+  content: attr(data-fill-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-text-stroke: 0px transparent;
+  transition: width 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#text:hover::before {
+  width: 100%;
 }
 
 
