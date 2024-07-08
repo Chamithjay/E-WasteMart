@@ -14,7 +14,7 @@
 
 .hero-content {
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -23,21 +23,26 @@
   margin-top: 50px;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
+  z-index: 3;
+  position: absolute;
 
 }
 
 .hero-text {
   flex: 1;
   padding: 20px;
+  z-index: 3;
+
 }
 
 #text {
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 20px;
-  -webkit-text-stroke: 0.05vw #fff;
+  -webkit-text-stroke: 0.05vw #E3FEF7;
   color: rgba(0, 0, 0, 0);
   position: relative;
+  z-index: 1;
  
   
 }
@@ -47,12 +52,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
+  color: #003C43;
   overflow: hidden;
   width: 0;
   height: 100%;
   -webkit-text-stroke: 0px transparent;
   transition: width 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1  ;
 }
 
 #text:hover::before {
@@ -63,7 +69,7 @@
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 30px;
-  text-align: left;
+  text-align: center;
 }
 
 .hero .btn {
@@ -71,39 +77,23 @@
   font-size: 1rem;
   border-radius: 25px;
   margin: 5px;
+  background-color: #135D66;
+  border-color: #135D66;
 }
 
-.bento-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  flex: 1;
-  max-width: 550px;
-  margin: 0;
-  
-}
-
-.bento-item {
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 15px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; /* Ensure the border-radius applies to the images */
-  padding: 0px;
-}
-
-.bento-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.bento-item img {
+.hero-section {
+  display: flex;
   width: 100%;
-  border-radius: 15px;
-  
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+
 }
+.hero-text h1{
+  z-index: 1;
+}
+.hero-overlay img{
+  width: 70%;
 
-
-.bento-item.medium {
-  grid-column: span 2;
 }

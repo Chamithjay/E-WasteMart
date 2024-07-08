@@ -1,0 +1,30 @@
+.cloud {
+    background: url('../Images/cloud.png') no-repeat center center / contain;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .cloud-1 {
+    top: 12%;
+    left: -200px;
+    animation: float 20s linear infinite;
+  }
+  
+  .cloud-2 {
+    top: 32%;
+    left: -250px;
+    animation: float 25s linear infinite;
+  }
+  
+
+  
+  @keyframes float {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(120vw);
+    }
+  }
+  

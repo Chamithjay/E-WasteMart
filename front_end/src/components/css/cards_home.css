@@ -4,31 +4,19 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
-    background-color: #FDFFF7;
+    background-color: #E3FEF7;
+
 }
 
 
-.heading {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
 
-.text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
 
-.products{
-    margin:50px 10px;
-}
-
-.products h1{
+.productList h1{
    text-align: center;
    margin:50px 10px 20px 10px;
-   color:#5C2111;
+   color:#1B262C;
+   font-size: 1.7em;
+   
 }
 
 
@@ -39,8 +27,7 @@ body {
     max-width: 22rem;
     max-height: fit-content;
     background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    box-shadow: 12px 17px 51px rgb(33, 37, 41,0.3);
     backdrop-filter: blur(6px);
     border-radius: 17px;
     text-align: center;
@@ -59,7 +46,7 @@ body {
 }
 
 .card:hover {
-    border: 1px solid #4D869C;
+    border: 1px solid #77B0AA;
     transform: scale(1.05);
 }
 
@@ -94,14 +81,18 @@ body {
 }
 
 .card .caption p {
-    color: #7a4b3d;
+    color: #212529;
     margin: 5px 0;
+    font-size: 0.9rem;
+    font-weight: lighter;
     /* Adjusted */
 }
 
-.card .caption h3 {
-    color: #5C2111;
+.card .caption h3,h4 {
+    color: #77B0AA;
     margin: 10px 0;
+    font-size: 1.2rem;
+    
     /* Adjusted */
 }
 
@@ -114,9 +105,9 @@ body {
 
 
 /* Add to cart button */
-.card button {
+.card button{
     --color: #fff;
-    background-color: #4D869C;
+    background-color: #77B0AA;
     display: inline-block;
     width: 8em;
     height: 2.6em;
@@ -151,7 +142,7 @@ body {
 }
 
 .card button:hover {
-    color: #4D869C;
+    color: #77B0AA;
     background-color: #fff;
 }
 
@@ -173,4 +164,67 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.caption{
+    text-align: left;
+}
+h4{
+    font-size: 1.1rem;
+    color: #212529;
+    
+}
+.seeMore{
+    --color: #fff;
+    background-color: #77B0AA;
+    display: inline-block;
+    width: 8%;
+    height: 2.6em;
+    line-height: 2.6em;
+    /* Adjusted */
+    margin-bottom: 30px;
+    /* Adjusted */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    color: var(--color);
+    margin-left: 46%;
+}
+.seeMore:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    /* Adjusted */
+    width: 200px;
+    /* Adjusted */
+    border-radius: 50%;
+    transition: all .7s;
+    opacity: 0.3;
+    /* Adjusted */
+}
+
+.seeMore:hover {
+    color: #77B0AA;
+    background-color: #fff;
+}
+
+.seeMore:before {
+    top: 100%;
+    left: 100%;
+}
+
+.seeMore:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.seeMore:active:before {
+    background: #fff;
+    transition: background 0s;
 }

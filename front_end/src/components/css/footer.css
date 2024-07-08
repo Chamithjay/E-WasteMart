@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;300;400&display=swap');
 .footer {
-    background-color: #212529;
+    background-color: #003C43;
     color: white;
     padding: 40px 0;
     font-family: 'Poppins', sans-serif;
@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 10%;   
-    background-color: #212529;
+    background-color: #003C43;
     width: 100%;
     box-shadow: none;
   }
@@ -58,9 +58,9 @@
     font-size: 1.2rem;
   }
   .hr{
-    color: #4D869C;
-    color: #4D869C;
-      border-bottom: 2px solid #4D869C;
+    color: #77B0AA;
+    color:#77B0AA;
+      border-bottom: 2px solid #77B0AA;
       border-radius: 10px;
       width: 90%;
       margin: 20px auto;
@@ -68,10 +68,11 @@
    
   }
   h5{
-    color:#4D869C;
+    color:#77B0AA;
   }
   h4{
     font-size: 1.2rem;
+    color: #E3FEF7;
   }
   .footer-logo #trash{
     margin-left: 0%;

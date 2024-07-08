@@ -5,6 +5,7 @@ import { FaShoppingCart, FaRegBookmark, FaStar, FaFireAlt } from 'react-icons/fa
 import img1 from './Images/phone.jpg';
 import img2 from './Images/mac.jpg';
 import img3 from './Images/air.jpg';
+import seeMore from './Images/seemore.svg';
 
 function Cards_home() {
     return (
@@ -18,7 +19,7 @@ function Cards_home() {
                         </div>
                         <div className="caption">
                             <h3 className="product_name heading">Iphone</h3>
-                            <p className="description text">Display not working</p>
+                            <p className="description text">Display not working. Everything else is fine.Good condition</p>
                             <h4 className="price heading"><b>Rs.20000</b></h4>
                         </div>
                         <button className="heading">Add to cart</button>
@@ -29,7 +30,7 @@ function Cards_home() {
                         </div>
                         <div className="caption">
                             <h3 className="product_name heading">MacBook Pro</h3>
-                            <p className="description text">Display & Touch pad not working</p>
+                            <p className="description text">Display & Touch pad not working. Other hardware is good.</p>
                             <h4 className="price heading"><b>Rs.85000</b></h4>
                         </div>
                         <button className="heading">Add to cart</button>
@@ -40,13 +41,14 @@ function Cards_home() {
                         </div>
                         <div className="caption">
                             <h3 className="product_name heading">Air pods(Gen 1)</h3>
-                            <p className="description text">Battery not working</p>
+                            <p className="description text">Battery not working.Speakers are in good condition.</p>
                             <h4 className="price heading"><b>Rs.15000</b></h4>
                         </div>
                         <button className="heading">Add to cart</button>
                     </div>
                 </div>
             </div>
+            <button className='seeMore'><img src={seeMore}/>See More</button>
         </div>
 
 

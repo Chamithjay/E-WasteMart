@@ -8,7 +8,7 @@ import trash from './Images/trash.png'
 function Nav(){
     
     return(        
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg ">
         <img id ='trash'src={trash} alt="Logo" style={{ width: '30px', height: '30px' }} />
         <a className="navbar-brand" href="#">E-Waste Mart</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ function Nav(){
               <a className="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="#">Buying</a>
+              <a className="nav-link " href="/buying">Buying</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Selling</a>
