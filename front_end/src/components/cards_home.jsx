@@ -6,6 +6,7 @@ import img1 from './Images/phone.jpg';
 import img2 from './Images/mac.jpg';
 import img3 from './Images/air.jpg';
 import seeMore from './Images/seemore.svg';
+import Buying from './buying';
 
 function Cards_home() {
     return (
@@ -48,7 +49,7 @@ function Cards_home() {
                     </div>
                 </div>
             </div>
-            <button className='seeMore'><img src={seeMore}/>See More</button>
+            <a href='/buying'><button className='seeMore'><img src={seeMore}/>See More</button></a>
         </div>
 
 

@@ -1,7 +1,7 @@
 .cloud {
     background: url('../Images/cloud.png') no-repeat center center / contain;
     position: absolute;
-    width: 200px;
+    width: 6.5vw;
     height: 100px;
   }
   
@@ -9,6 +9,7 @@
     top: 12%;
     left: -200px;
     animation: float 20s linear infinite;
+    
   }
   
   .cloud-2 {
