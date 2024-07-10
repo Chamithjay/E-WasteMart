@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home.jsx";
 import Login from "./components/login.jsx";
 import Buying from "./components/buying.jsx";
+import Selling from './components/selling.jsx';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/sign_up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />      
-          <Route path="/buying" element={<Buying/>}/>       
+          <Route path="/buying" element={<Buying/>}/>  
+          <Route path="/selling" element={<Selling/>}/>     
       </Routes>
     </BrowserRouter>
   )

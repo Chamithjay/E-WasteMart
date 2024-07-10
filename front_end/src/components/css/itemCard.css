@@ -1,0 +1,152 @@
+
+.card {
+    box-sizing: border-box;
+    max-width: 22rem;
+    max-height: fit-content;
+    background: rgba(217, 217, 217, 0.58);
+    box-shadow: 12px 17px 51px rgb(33, 37, 41,0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* Adjusted */
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin: 0% 2%;
+    
+}
+
+.card:hover {
+    border: 1px solid #77B0AA;
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card .image {
+    width: 100%;
+    /* Adjusted */
+    height: 40%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 17px;
+    /* Adjusted */
+    border-top-right-radius: 17px;
+    /* Adjusted */
+}
+
+.card .caption {
+    padding: 0 15px;
+    /* Adjusted */
+    text-align: left;
+    line-height: 1.5em;
+    /* Adjusted */
+}
+
+.card .caption p {
+    color: #212529;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    /* Adjusted */
+}
+
+.card .caption h3,h4 {
+    color: #77B0AA;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    
+    /* Adjusted */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px;
+
+}
+
+
+/* Add to cart button */
+.card button{
+    --color: #fff;
+    background-color: #77B0AA;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.6em;
+    /* Adjusted */
+    margin: 10px;
+    /* Adjusted */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    color: var(--color);
+}
+
+.card button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    /* Adjusted */
+    width: 200px;
+    /* Adjusted */
+    border-radius: 50%;
+    transition: all .7s;
+    opacity: 0.3;
+    /* Adjusted */
+}
+
+.card button:hover {
+    color: #77B0AA;
+    background-color: #fff;
+}
+
+.card button:before {
+    top: 100%;
+    left: 100%;
+}
+
+.card button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.card button:active:before {
+    background: #fff;
+    transition: background 0s;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caption{
+    text-align: left;
+}
+h4{
+    font-size: 1.1rem;
+    color: #212529;
+    
+}

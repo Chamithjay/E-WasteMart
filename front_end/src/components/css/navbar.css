@@ -7,7 +7,8 @@
     position: fixed;
     z-index: 9999;
     font-family: 'Poppins', sans-serif;
-background-color: #003C43;
+    background-color: #003C43;
+    top:0;
 }
 .navbar-brand{
     font-size: 1.5em;
