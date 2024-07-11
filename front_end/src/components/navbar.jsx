@@ -29,11 +29,7 @@ function Nav(){
               <a className="nav-link" href="#">About</a>
             </li>
             <li className="nav-item">
-<<<<<<< HEAD
-              <a className="nav-link" href="#">Q&A</a>
-=======
-              <a className="nav-link" href="/QnA">QnA</a>
->>>>>>> c6a25391007b278941fbc5e3c4dce9ed64ecc3b0
+              <a className="nav-link" href="/QnA">Q&A</a>
             </li>
           </ul>
           <form className="d-flex me-3">
