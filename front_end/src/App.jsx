@@ -6,6 +6,7 @@ import Home from "./components/home.jsx";
 import Login from "./components/login.jsx";
 import Buying from "./components/buying.jsx";
 import Selling from './components/selling.jsx';
+import QnAPage from './components/QnAPage.jsx';
 
 
 
@@ -20,7 +21,8 @@ function App() {
           <Route path="/sign_up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />      
           <Route path="/buying" element={<Buying/>}/>  
-          <Route path="/selling" element={<Selling/>}/>     
+          <Route path="/selling" element={<Selling/>}/>
+          <Route path="/QnA" element={<QnAPage/>}/>     
       </Routes>
     </BrowserRouter>
   )
