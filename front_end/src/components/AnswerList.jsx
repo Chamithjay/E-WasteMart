@@ -1,5 +1,6 @@
 import React from 'react';
-import StarRating from './StarRating'; // Assuming you have a StarRating component
+import AnswerItem from './AnswerItem';
+
 
 function AnswerList({ answers, rateAnswer }) {
   return (

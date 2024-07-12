@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './css/qna-styles.css'; // Import your custom CSS file
 
 // Component to handle the form for submitting a new question
 function QuestionForm({ addQuestion }) {

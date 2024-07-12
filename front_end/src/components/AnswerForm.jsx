@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 // Component to handle the form for submitting a new answer
 function AnswerForm({ addAnswer }) {
   const [content, setContent] = useState(''); // State to hold the content of the answer

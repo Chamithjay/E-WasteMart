@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import QuestionForm from './QuestionForm';
-import QuestionList from './QuestionList';
+import QuestionList from './QuestionList.jsx';
+import QuestionForm from './QuestionForm.jsx';// Import your custom CSS file
+import Nav from './navbar.jsx';
 
-// Component to represent the Q&A page
-function QnAPage() {
-  const [questions, setQuestions] = useState([]); // State to hold the list of questions
+const QnAPage = () => {
+    const [questions, setQuestions] = useState([]);
 
-  const addQuestion = (question) => {
-    setQuestions([...questions, question]); // Add the new question to the list of questions
-  };
+    const addQuestion = (newQuestion) => {
+        // Add the new question to the beginning of the questions array
+        setQuestions([newQuestion, ...questions]);
+    };
 
   return (
     <div>
