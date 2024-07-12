@@ -48,6 +48,13 @@ const Buying = () => {
             ))}
           </div>
         </div>
+        <div className="row">
+          <div className="cardContainer">
+            {filteredProducts.slice(8, 12).map((item, index) => (
+              <ItemCard key={index} img={item.img} title={item.name} description={item.description} price={item.price} item={item} />
+            ))}
+          </div>
+        </div>
       </div>
       <Footer />
     </>
