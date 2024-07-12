@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './css/qna-styles.css'; // Import your custom CSS file
 
 // Component to handle the form for submitting a new question
 function QuestionForm({ addQuestion }) {
@@ -13,23 +14,20 @@ function QuestionForm({ addQuestion }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Title</label>
-        <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          required
-        />
-      </div>
-      <div>
-        <label>Content</label>
-        <textarea
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-          required
-        />
-      </div>
+    <form className="form-container" onSubmit={handleSubmit}>
+      <label>Title</label>
+      <input
+        type="text"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        required
+      />
+      <label>Content</label>
+      <textarea
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
+        required
+      />
       <button type="submit">Submit</button>
     </form>
   );
