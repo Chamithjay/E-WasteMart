@@ -2,12 +2,13 @@ import react from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/login.css'
 import Nav from "./navbar.jsx";
+import Back from './Images/SignUp.jpg'
 
 function Login(){
     return(
         <div>
             <Nav />
-            <div style={{ backgroundColor: '#7AB2B2', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ backgroundImage:`url(${Back})`, height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' ,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
                 
                 <div className="container  ">
                 

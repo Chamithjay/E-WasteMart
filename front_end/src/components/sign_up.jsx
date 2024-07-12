@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './css/sign_up.css'
 import Nav from "./navbar.jsx";
 import axios from 'axios';
+import Back from './Images/SignUp.jpg'
 
 function SignUp(){
       
     return(
         <div >
             <Nav />
-            <div style={{ backgroundColor: '#212529', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ backgroundImage:`url(${Back})`, height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' ,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
               
             <div className="container">
           

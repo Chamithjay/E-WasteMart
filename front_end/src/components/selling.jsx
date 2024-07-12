@@ -8,7 +8,7 @@ function Selling(){
     return(
         <div>
            <Nav/>  
-           <div style={{ backgroundColor: '#4D869C;', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+           <div style={{ backgroundColor: '#4D869C;', height: '150vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 
                 <div className="container" style={{ width:'80vw',backgroundColor: '#176B87' ,color:'white'}}>
                     <form> 
@@ -53,7 +53,8 @@ function Selling(){
                 </div>
 
             </div>
-            <Footer/>
+           <Footer/>
+            
             
         </div>
     )

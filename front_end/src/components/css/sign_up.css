@@ -1,20 +1,20 @@
 .container {
-    background-color: rgb(185, 183, 189);
+    background-color:rgba(119, 176, 170,0.95);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width:30%;
-   
+    
     
 }
-.btn {
-    background-color: #4D869C;
+.container .btn {
+    background-color: #003C43;
     border-color: #4D869C;
 }
 .btn:hover {
     background-color: #CDE8E5;
     border-color: #4D869C;
-    color: #4D869C;
+    color: #003C43;
     text-decoration: solid;
 }
 .form-group{
