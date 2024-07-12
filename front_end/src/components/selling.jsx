@@ -2,6 +2,7 @@ import react from 'react';
 import './css/selling.css';
 import ImageUpload from './imageUpload';
 import Nav from './navbar';
+import Footer from './footer';
 
 function Selling(){
     return(
@@ -9,9 +10,7 @@ function Selling(){
            <Nav/>  
            <div style={{ backgroundColor: '#4D869C;', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 
-                <div className="container" style={{ width:'80vw',backgroundColor: '#003C43' ,color:'white'}}>
-                
-                    {/* change the form action to the correct path */}
+                <div className="container" style={{ width:'80vw',backgroundColor: '#176B87' ,color:'white'}}>
                     <form> 
                         <h2>List Your Item Here</h2>
                         <div className="form-group">
@@ -54,6 +53,7 @@ function Selling(){
                 </div>
 
             </div>
+            <Footer/>
             
         </div>
     )

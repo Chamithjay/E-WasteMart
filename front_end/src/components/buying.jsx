@@ -7,7 +7,8 @@ import data from './data';
 import Cart from './cart';
 import React, { useState } from 'react';// Make sure you have a data file with products
 import Filter from './filters';
-;
+import Footer from './footer.jsx';
+
 
 const Buying = () => {
   const [filteredProducts, setFilteredProducts] = useState(data.products);
@@ -48,6 +49,7 @@ const Buying = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

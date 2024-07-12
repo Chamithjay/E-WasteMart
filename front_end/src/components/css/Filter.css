@@ -1,48 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200;300;400&display=swap');
+
 .filter-container {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 55px;
-    font-family: 'Poppins', sans-serif;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .filter-container h2 {
-   
-    font-size: 24px;
-    color: #333;
-    margin-right: 100px;
-  }
-  
-  .filter-group {
-    margin-left: 20px;
-    display:flexbox;
-   
-  }
-  
-  .filter-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-  }
-  
-  .filter-select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .filter-select:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
+  background-color: #64CCC5;
+  border: 1px solid #64CCC5;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+}
+
+.filter-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.filter-group-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #333;
+  background-color: #DAFFFB;
+  transition: all 0.3s;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #77B0AA;
+  box-shadow: 0 0 5px rgba(119, 176, 170, 0.5);
+}
+
+.filter-select:hover {
+  border-color: #003C43;
+}
+
+.filter-group label {
+  font-size: 1em;
+  color: #003C43;
+}
+
+.filter-group select {
+  font-family: 'Poppins', sans-serif;
+}
+
+.filter-group select:hover {
+  cursor: pointer;
+}
+
+.filter-group select:focus {
+  outline: none;
+}
+
+.filter-container h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}

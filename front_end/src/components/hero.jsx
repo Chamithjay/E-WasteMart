@@ -1,5 +1,5 @@
 import react from 'react';
-import './css/hero.css';
+import './css/Hero.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Cloud from './cloud';
 import building from './Images/building.png';

@@ -15,7 +15,8 @@ const data = {
             description: 'Display not working. Everything else is fine.Good condition',
             price: 20000,
             img: img1,
-            type:'Mobile'
+            type:'Mobile',
+            condition:'Good'
         },
         {
             id: 2,
@@ -23,7 +24,8 @@ const data = {
             description: 'Display & Touch pad not working. Other hardware is good.',
             price: 85000,
             img: img2,
-            type:'Laptop'
+            type:'Laptop',
+            condition:'Good'
         },
         {
             id: 3,
@@ -31,7 +33,8 @@ const data = {
             description: 'Battery not working.Speakers are in good condition.',
             price: 15000,
             img: img3,
-            type:'Earphones'
+            type:'Earphones',
+            condition:'Excellent'
         },
         {
             id: 4,
@@ -39,7 +42,8 @@ const data = {
             description: 'Sound card not working.Speakers are in good condition.',
             price: 35000,
             img: img4,
-            type:'TV'
+            type:'TV',
+            condition:'Poor'
         },
         {
             id: 5,
@@ -47,7 +51,8 @@ const data = {
             description: 'Very good condition.Used for 1 year.',
             price: 35000,
             img: img5,
-            type:'Other'
+            type:'Other',
+            condition:'Excellent'
         },
         {
             id: 6,
@@ -55,7 +60,8 @@ const data = {
             description: '90% condition.Used for 2 years.',
             price: 35000,
             img: img6,
-            type:'Other'
+            type:'Other',
+            condition:'Good'
         },
         {
             id: 7,
@@ -63,7 +69,8 @@ const data = {
             description: '8th gen processor.Used for 1 year.',
             price: 35000,
             img: img7,
-            type:'Other'
+            type:'Other',
+            condition:'Poor'
         },
         {
             id: 8,
@@ -71,7 +78,8 @@ const data = {
             description: '240V 65W power supply.Used for 1 year.',
             price: 35000,
             img: img8,
-            type:'Other'
+            type:'Other',
+            condition:'Poor'
         }
     ]
 };
