@@ -7,12 +7,14 @@ import Login from "./components/login.jsx";
 import Buying from "./components/buying.jsx";
 import Selling from './components/selling.jsx';
 import QnAPage from './components/QnAPage.jsx';
+import AboutPage from './components/AboutPage.jsx';
 
 
 
 function App() {
   
 
+  const newLocal = "/about";
   return (
     <BrowserRouter>
      
@@ -22,7 +24,8 @@ function App() {
           <Route path="/login" element={<Login />} />      
           <Route path="/buying" element={<Buying/>}/>  
           <Route path="/selling" element={<Selling/>}/>
-          <Route path="/QnA" element={<QnAPage/>}/>     
+          <Route path="/QnA" element={<QnAPage/>}/> 
+          <Route path="/about" element={<AboutPage/>}/>   
       </Routes>
     </BrowserRouter>
   )
