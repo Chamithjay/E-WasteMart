@@ -15,4 +15,4 @@ function AnswerList({ answers, rateAnswer }) {
   );
 }
 
-export default AnswerList;
+export default AnswerList
