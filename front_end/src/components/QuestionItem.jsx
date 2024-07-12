@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import AnswerList from './AnswerList';
 import AnswerForm from './AnswerForm';
-import './css/qna-styles.css'; // Import your custom CSS file
 
 function QuestionItem({ question }) {
   const [answers, setAnswers] = useState([]);

@@ -1,6 +1,6 @@
 import React from 'react';
 import QuestionItem from './QuestionItem';
-import './css/qna-styles.css'; // Import your custom CSS file
+// Import your custom CSS file
 
 function QuestionList({ questions }) {
   // Check if questions is defined before mapping

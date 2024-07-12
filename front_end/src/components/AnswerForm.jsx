@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/qna-styles.css'; // Import your custom CSS file
+
 
 function AnswerForm({ addAnswer }) {
   const [content, setContent] = useState('');

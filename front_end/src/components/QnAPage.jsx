@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import QuestionList from './QuestionList.jsx';
-import QuestionForm from './QuestionForm.jsx';
-import './css/qna-styles.css'; // Import your custom CSS file
+import QuestionForm from './QuestionForm.jsx';// Import your custom CSS file
 import Nav from './navbar.jsx';
 
 const QnAPage = () => {

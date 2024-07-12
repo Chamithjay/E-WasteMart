@@ -1,6 +1,6 @@
 import React from 'react';
 import AnswerItem from './AnswerItem';
-import './css/qna-styles.css'; // Import your custom CSS file
+
 
 function AnswerList({ answers, rateAnswer }) {
   return (
