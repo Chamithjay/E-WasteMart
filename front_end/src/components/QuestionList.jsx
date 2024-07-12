@@ -1,14 +1,19 @@
 import React from 'react';
 import QuestionItem from './QuestionItem';
-// Import your custom CSS file
+import './css/qna.css'
 
-// Component to display the list of questions
+
 function QuestionList({ questions }) {
+  // Check if questions is defined before mapping
+  if (!questions || !questions.length) {
+    return <div>No questions available.</div>;
+  }
+
   return (
-    <div>
-      <h2>Questions</h2>
+    <div className=" question-list">
+      <h2>Questions:</h2>
       {questions.map((question, index) => (
-        <QuestionItem key={index} question={question} /> // Render each question using the QuestionItem component
+        <QuestionItem key={question.id} question={question} />
       ))}
     </div>
   );

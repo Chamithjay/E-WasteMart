@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import AnswerList from './AnswerList';
 import AnswerForm from './AnswerForm';
 
+
 function QuestionItem({ question }) {
   const [answers, setAnswers] = useState([]);
 
-  const addAnswer = (answer) => {
-    setAnswers([...answers, { content: answer, rating: 0 }]); // Modify to include rating with initial value 0
+  const addAnswer = (answerContent) => {
+    const newAnswer = { content: answerContent, rating: 0 };
+    setAnswers([...answers, newAnswer]);
   };
 
   const rateAnswer = (index, rating) => {
@@ -16,10 +18,10 @@ function QuestionItem({ question }) {
   };
 
   return (
-    <div>
+    <div className="question-item">
       <h3>{question.title}</h3>
       <p>{question.content}</p>
-      <AnswerList answers={answers} rateAnswer={rateAnswer} /> {/* Pass rateAnswer function to AnswerList */}
+      <AnswerList answers={answers} rateAnswer={rateAnswer} />
       <AnswerForm addAnswer={addAnswer} />
     </div>
   );

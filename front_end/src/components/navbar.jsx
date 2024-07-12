@@ -10,7 +10,7 @@ function Nav(){
     return(        
         <nav className="navbar navbar-expand-lg ">
         <img id ='trash'src={trash} alt="Logo" style={{ width: '30px', height: '30px' }} />
-        <a className="navbar-brand" href="#">E-Waste Mart</a>
+        <a className="navbar-brand" >E-Waste Mart</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -26,7 +26,7 @@ function Nav(){
               <a className="nav-link" href="/selling">Selling</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="/About">About</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/QnA">Q&A</a>
