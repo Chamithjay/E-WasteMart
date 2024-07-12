@@ -228,3 +228,14 @@ h4{
     background: #fff;
     transition: background 0s;
 }
+.productList .hr{
+      color:#003C43;
+      border-bottom: 3px solid #003C43;
+      border-radius: 10px;
+      width: 15%;
+      margin: -15px auto;    
+   
+  }
+.price-heading{
+    color: #77B0AA;
+}
