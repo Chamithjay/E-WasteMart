@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './css/qna.css'
 
 
 // Component to handle the form for submitting a new question
@@ -15,14 +16,14 @@ function QuestionForm({ addQuestion }) {
 
   return (
     <form className="form-container" onSubmit={handleSubmit}>
-      <label>Title</label>
+      <label>Title:</label>
       <input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         required
       />
-      <label>Content</label>
+      <label>Content:</label>
       <textarea
         value={content}
         onChange={(e) => setContent(e.target.value)}

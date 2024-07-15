@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './css/qna.css'
 
 
 function AnswerForm({ addAnswer }) {
@@ -13,7 +14,7 @@ function AnswerForm({ addAnswer }) {
   return (
     <form onSubmit={handleSubmit} className="answer-form">
       <div>
-        <label>Answer</label>
+        <label>Answer:</label>
         <textarea
           value={content}
           onChange={(e) => setContent(e.target.value)}
