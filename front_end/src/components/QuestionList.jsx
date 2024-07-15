@@ -1,6 +1,7 @@
 import React from 'react';
 import QuestionItem from './QuestionItem';
-// Import your custom CSS file
+import './css/qna.css'
+
 
 function QuestionList({ questions }) {
   // Check if questions is defined before mapping
@@ -9,8 +10,8 @@ function QuestionList({ questions }) {
   }
 
   return (
-    <div className="container question-list">
-      <h2>Questions</h2>
+    <div className=" question-list">
+      <h2>Questions:</h2>
       {questions.map((question, index) => (
         <QuestionItem key={question.id} question={question} />
       ))}

@@ -11,7 +11,7 @@ function SignUp(){
     return(
         <div >
             <Nav />
-            <div style={{ backgroundImage:`url(${Back})`, height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' ,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
+            <div style={{ backgroundImage:`url(${Back})`, height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' ,backgroundRepeat:'repeat-x',backgroundSize:'cover'}}>
               
             <div className="container">
           
