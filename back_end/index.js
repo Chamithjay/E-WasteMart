@@ -4,9 +4,9 @@ const mysql = require('mysql');
 
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
+    user: 'Chamitha',
     password: '',
-    database: 'E-WasteMart'
+    database: 'e_wastemart'
 });
 
 const app = express();

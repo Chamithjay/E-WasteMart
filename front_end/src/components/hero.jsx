@@ -26,8 +26,8 @@ function Hero(){
                 <h1 id='text' >Don't Trash It. Recycle It</h1>
                 <p><b>DON'T WASTE YOUR TECH. RECYCLE, REBUILD, RESELL.</b></p>
                 <div className='hero-btn'>
-                    <a href="#purchase" className="btn btn-light">Purchase</a>
-                    <a href="#selling" className="btn btn-light">Selling</a>
+                    <a href="/buying" className="btn btn-light">Buying</a>
+                    <a href="/selling" className="btn btn-light">Selling</a>
                 </div>  
             </div>
         </div>
