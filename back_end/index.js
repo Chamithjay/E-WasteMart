@@ -35,7 +35,8 @@ app.post('/signup', (req, res) => {
             console.error('Error inserting user:', err);
             res.status(500).send('Server error');
         } else {
-            res.status(201).send('User registered successfully');
+            console.log("Succesfully Registered");
+            res.sendStatus(201);
         }
     });
 });

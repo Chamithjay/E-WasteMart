@@ -1,0 +1,50 @@
+/* Container to center the spinner in the middle of the page */
+.spinner-container {
+  height: 100vh;
+}
+
+/* Custom Bootstrap spinner */
+.custom-spinner {
+  width: 4rem;
+  height: 4rem;
+  border-width: 0.4rem;
+  animation: spin 1.5s linear infinite;
+  position: relative;
+}
+
+/* Adding gradient color animation to the spinner */
+.custom-spinner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #6f42c1, #f39c12, #dc3545);
+  opacity: 0.5;
+  animation: pulse 3s ease-in-out infinite;
+  z-index: -1; /* Send it behind the spinner */
+}
+
+/* Animation for spinning */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pulse animation for the gradient effect */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
