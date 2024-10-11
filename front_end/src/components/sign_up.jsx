@@ -15,7 +15,7 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false); // Spinner state
   const navigate = useNavigate(); 
-  const [errors, setErrors] = useState({});
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

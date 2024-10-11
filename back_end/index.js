@@ -41,6 +41,25 @@ app.post('/signup', (req, res) => {
     });
 });
 
+// Login API
+app.post('/login', (req, res) => {
+    const { email, password } = req.body;
+
+    const sql = 'SELECT * FROM user WHERE Email = ? AND password = ?';
+    db.query(sql, [email, password], (err, result) => {
+        if (err) {
+            console.error('Error logging in:', err);
+            res.status(500).send('Server error');
+        } else {
+            if (result.length > 0) {
+                res.sendStatus(201);
+            } else {
+                res.status(401).send('Invalid email or password');
+            }
+        }
+    });
+});
+
 // Start the server
 const PORT = 3000;
 app.listen(PORT, () => {

@@ -7,7 +7,8 @@ import Login from "./components/login.jsx";
 import Buying from "./components/buying.jsx";
 import Selling from './components/selling.jsx';
 import QnAPage from './components/QnAPage.jsx';
-import AboutPage from './components/About.jsx'
+import AboutPage from './components/About.jsx';
+import Cart from './components/cart.jsx';
 
 
 
@@ -24,7 +25,8 @@ function App() {
           <Route path="/buying" element={<Buying/>}/>  
           <Route path="/selling" element={<Selling/>}/>
           <Route path="/QnA" element={<QnAPage/>}/>  
-          <Route path="/About" element={<AboutPage/>}/>     
+          <Route path="/About" element={<AboutPage/>}/>    
+          <Route path="/cart" element={<cart/>}/>
       </Routes>
     </BrowserRouter>
   )
