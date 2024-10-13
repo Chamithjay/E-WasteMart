@@ -59,6 +59,21 @@ app.post('/login', (req, res) => {
         }
     });
 });
+// Add product API
+app.post('/product', (req, res) => {
+    const { title, description, Status, quantity, rating, price, image } = req.body;
+
+    const sql = 'INSERT INTO product (product_title, product_description, product_status, quantity, images, price, product_rating) VALUES (?, ?, ?, ?, ?, ?, ?)';
+    db.query(sql, [title, description, Status, quantity, image, price, rating], (err, result) => {
+        if (err) {
+            console.error('Error inserting product:', err);
+            res.status(500).send('Server error');
+        } else {
+            res.sendStatus(201);
+        }
+    });
+});
+
 
 // Start the server
 const PORT = 3000;
