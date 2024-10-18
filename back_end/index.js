@@ -73,6 +73,18 @@ app.post('/product', (req, res) => {
         }
     });
 });
+// Define an API route to fetch products
+app.get('product', (req, res) => {
+    const query = 'SELECT * FROM product'; // Modify this to your table structure
+    db.query(query, (err, result) => {
+        if (err) {
+            console.log('Error fetching products:', err);
+            res.status(500).send('Server error');
+            return;
+        }
+        res.json(result); // Send the product data as a JSON response
+    });
+});
 
 
 // Start the server
