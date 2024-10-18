@@ -69,22 +69,24 @@ app.post('/product', (req, res) => {
             console.error('Error inserting product:', err);
             res.status(500).send('Server error');
         } else {
-            res.sendStatus(201);
+            // Get the ID of the inserted product
+            const insertedId = result.insertId;
+
+            // Fetch the newly created product from the database
+            const fetchSql = 'SELECT * FROM product WHERE product_id = ?';
+            db.query(fetchSql, [insertedId], (err, rows) => {
+                if (err) {
+                    console.error('Error fetching product:', err);
+                    res.status(500).send('Server error');
+                } else {
+                    res.status(201).json(rows[0]); // Return the new product
+                }
+            });
         }
     });
 });
+
 // Define an API route to fetch products
-app.get('product', (req, res) => {
-    const query = 'SELECT * FROM product'; // Modify this to your table structure
-    db.query(query, (err, result) => {
-        if (err) {
-            console.log('Error fetching products:', err);
-            res.status(500).send('Server error');
-            return;
-        }
-        res.json(result); // Send the product data as a JSON response
-    });
-});
 
 
 // Start the server

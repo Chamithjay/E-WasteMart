@@ -8,10 +8,10 @@ const ItemCard = (props) => {
     return (
         <div className="card">
             <div className="image">
-                <img src={props.img} alt={props.title} />
+                <img src={props.img}  />
             </div>
             <div className="caption">
-                <h3 className="product_name heading">{props.title}</h3>
+                <h3 className="product_name heading">{props.name}</h3>
                 <p className="description text">{props.description}</p>
                 <h4 className="price heading"><b>{props.price}</b></h4>
             </div>
